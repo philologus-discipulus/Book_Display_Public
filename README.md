@@ -1,9 +1,7 @@
 # Book_Display_Public
-A free, open-source program to help people set up digital displays of books.
+A free, open-source program to help librarians (and people in general) set up digital displays of books.
 
-Please note, this is copyright to David Baron 2017.
-
-This project is meant to help librarians create digital displays of books.
+Please note, program is copyright to David Baron 2017.
 
 Please note that, for the purposes of this project (including, but not limited to this README.md file) nothing constitutes a warranty of any kind from me insofar as sections 15 + 16 of the GPL 3.0 are concerned.
 
