@@ -1,0 +1,71 @@
+<!--
+    Copyright (C) 2017  David Baron (written in California)
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+{% extends "frame.html" %}
+{% block content %}
+<br><br>
+<div class="row">
+<div class="col-xs-2 violet"><span class="librarians">{{display_group.library}}</span>
+</div><div class="col-xs-8  light-blue">
+
+{% for display in display_group.displays %}
+    {% if loop.index0 == 0 %}
+<div id="d{{loop.index0}}" class="display" style="display:block;" data-time="{{display.book_time}}">
+    {% else %}
+<div id="d{{loop.index0}}" class="display" style="display:none;" data-time="{{display.book_time}}">
+    {% endif %}
+            <p>
+                <span class="display_title">
+                {% if display.title %}
+                    {{display.title}}
+                {% endif %}
+                </span>
+            </p>
+    {% for book in display.books %}
+    {% if loop.index0 == 0 %}
+    <div id = "b{{loop.index0}}" class = "book" style="display:block;">
+    {% else %}
+    <div id = "b{{loop.index0}}" class = "book" style="display:none;">
+    {% endif %}
+        {% if book.title %}
+        <p><span class = "book_title">Title:  {{ book.title }} </span></p>
+        {% endif %}
+        {% if book.author %}
+        <p><span class="author">Author:  {{ book.author }} </span></p>
+        {% endif %}
+        {% if book.image_location %}
+        <img src="{{url_for('static', filename=book.image_location)}}" class="img-rounded image">
+        {% endif %}
+
+            <p> {{ book.review }} </p>
+        {% if book.review_author %}
+	    <p>&#8210;{{ book.review_author }}</p>
+        {% endif %}
+
+    </div>
+
+    {% endfor %}
+</div>
+{% endfor %}
+
+</div><div class="col-xs-2 violet"><span class="librarians">{{display_group.library_message}}</span></div>
+</div>
+<p>
+    Website created by David Baron.
+    Made available under the GPL 3.0: https://www.gnu.org/licenses/gpl-3.0.en.html
+    Source code available at https://github.com/philologus-discipulus/Book_Display_Public.git
+</p>
+{% endblock %}

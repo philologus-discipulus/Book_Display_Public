@@ -1,0 +1,87 @@
+<!--
+    Copyright (C) 2017  David Baron (written in California)
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<displays>
+    <metadata_displays>
+        <library_name>Your Public Library</library_name>
+        <page_title>Library Displays</page_title>
+        <library_message>Librarians are Awesome!</library_message>
+    </metadata_displays>
+<display>  <!--  One or more of these elements, provided that they each have <metadata> and at least one <book>  -->
+    <metadata>
+        <display_title>Urban Fantasy Series</display_title> <!--  may be left blank, but must be included  -->
+        <book_time>5</book_time>  <!-- Time is in seconds.  Eg. 300 seconds is 5 minutes -->
+    </metadata>
+    <book>  <!-- One or more of these elements, as long as there is only one of each sub-element   -->
+        <title>The Atrocity Archives</title> <!--  may be left blank, but must be included  -->
+        <author>Charles Stross</author>  <!--  may be left blank, but must be included  -->
+        <image_name>The_Atrocity_Archives.png</image_name>  <!--  may be left blank, but must be included  -->
+        <review>  <!--  may be left blank, but must be included  -->
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        </review>
+        <review_author>Anonymous</review_author>  <!--  may be left blank, but must be included  -->
+    </book>
+    <book>
+        <title>Hounded</title>
+        <author>Kevin Hearne</author>
+        <image_name>Hounded.png</image_name>
+        <review>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</review>
+        <review_author>Anonymous</review_author>
+    </book>
+    <book>
+        <title>Discount Armageddon</title>
+        <author>Seanan McGuire</author>
+        <image_name>Discount_Armageddon.png</image_name>
+        <review>
+        </review>
+        <review_author></review_author>
+    </book>
+</display>
+<display>
+    <metadata>
+        <display_title>Stock Display Title 2</display_title>
+		<book_time>5</book_time> <!-- Time is in seconds.  Eg. 300 seconds is 5 minutes -->
+    </metadata>
+    <book>
+        <title>Book 1</title>
+        <author>Author 1</author>
+        <image_name>First_Stock.png</image_name>
+        <review>Stock Review Text 1</review>
+        <review_author>Stock Review Author 1</review_author>
+    </book>
+    <book>
+        <title>Book 2</title>
+        <author>Author 2</author>
+        <image_name></image_name>
+        <review>Stock Review Text 2</review>
+        <review_author>Stock Review Author 2</review_author>
+    </book>
+    <book>
+        <title>Book 3</title>
+        <author>Author 3</author>
+        <image_name></image_name>
+        <review>Stock Review Text 3</review>
+        <review_author>Stock Review Author 3</review_author>
+    </book>
+    <book>
+        <title></title>
+        <author></author>
+        <image_name></image_name>
+        <review></review>
+        <review_author></review_author>
+    </book>
+</display>
+</displays>

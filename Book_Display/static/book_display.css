@@ -1,0 +1,106 @@
+/*
+    Copyright (C) 2017  David Baron (written in California)
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+/*  If you need to edit the media queries, I suggest loading the site locally on your computer, and then loading it
+  on http://app.protofluid.com   Since Protofluid seems to use your locally cached files to generate the site, you need
+  to (after making changes) first reload your locally running site (using ctrl + fn + F5 or ctrl + F5 if
+  your computer doesn't need the "fn" key) and then reload the Protofluid site using the same keys.  */
+
+html, body, .container{
+    background-color:#7D6593;
+    height:100%;
+}
+
+img.image{
+    min-height: 120px;
+    min-width: 80px;
+    max-height: 200px;
+    max-width: 137px;
+    height: 30vh;
+    width: 20vh;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+}
+
+
+
+p{
+    text-align:center;
+}
+
+span.display_title{
+    font-size:x-large;
+    font-weight:bold;
+    text-align:center;
+}
+
+span.book_title{
+    font-size:large;
+    text-align:center;
+}
+
+span.librarians {
+    color: #809fff;
+    font-weight: bold;
+    font-size: 1.75vh;
+    text-shadow: .4vh .4vh 0.25vh violet;
+}
+
+
+@media only screen and (min-aspect-ratio:3/4){
+span.librarians {
+    font-size: 2.5vh;
+    text-shadow: .4vh .4vh 0.25vh violet;
+    }
+}
+@media only screen and (min-aspect-ratio:1/1){
+span.librarians {
+    font-size: 4vh;
+    text-shadow: .4vh .4vh 0.25vh violet;
+    }
+}
+
+@media only screen and (min-aspect-ratio:280/135){
+span.librarians {
+    font-size: 5.5vh;
+    text-shadow: 1.5vh 1.5vh 0.75vh violet;
+    }
+}
+
+div.violet {
+    display:none;
+}
+
+@media only screen and (min-width:768px){
+div.violet {
+    background-color:lavender;
+    width:20%;
+    display:block;
+    }
+
+div.row{
+        background-color:lavender;
+    }
+
+}
+
+div.light-blue {
+    background-color:rgb(204,238,255);
+    width:60%;
+    min-height:50vh;
+}
