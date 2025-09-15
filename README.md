@@ -120,6 +120,7 @@ In general, it is safer to change the .css file (book_display.css) than it is to
 #### Display Content
 
 To modify the display content, feel free to change the text in the following xml file: book_display_information.xml
+
 Any new pictures should be added to the /static/pictures/ folder.
 
 When doing so, please note the following:
