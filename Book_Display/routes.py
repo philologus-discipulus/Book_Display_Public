@@ -17,20 +17,30 @@
 
 # Archival Notes for Licenses for Flask, Bootstrap, and JQuery
 
-# Flask License: http://flask.pocoo.org/docs/0.12/license/#flask-license (3-Clause BSD)
-# archived version of license:
+# Archived version of Flask License 
+# (note: website appears to have changed since 2017; since Flask is hosted externally and needs 
+#  to be installed, please check the license associated with the relevant package to 
+#  be sure that terms and conditions have not changed - I include the link below merely
+#  to illustrate the version of Flask against which this project was originally developed):
 # https://web.archive.org/web/20170519021831/http://flask.pocoo.org/docs/0.12/license/
 
-# Bootstrap License: https://github.com/twbs/bootstrap/blob/master/LICENSE
-# archived version of license:
+# Archived version of Bootstrap License:
 # https://web.archive.org/web/20170519023116/https://github.com/twbs/bootstrap/blob/master/LICENSE
 
-# JQuery License: https://jquery.org/license/
-# archived version of license:
+# Archived version of JQuery License:
 # https://web.archive.org/web/20170519023014/https://jquery.org/license/
 
 from flask import Flask, render_template
 from models import loaded_displays
+
+import argparse
+
+localhost = '127.0.0.1'
+
+argsParser = argparse.ArgumentParser()
+argsParser.add_argument("-p", '--port', type=int, help=f"Specify the port for localhost ({localhost}) on which the Book Display Project is to run.  Eg. specifying '5000' results in the Book Display Project running on 'http://{localhost}:5000'.  Note that this is not meant to be used as a website, merely using the browser as a local means of displaying the project.")
+
+arguments = argsParser.parse_args()
 
 app = Flask(__name__)
 
@@ -40,4 +50,4 @@ def home_page():
     return render_template("book_display_template.html", display_group = loaded_displays )
 
 if __name__ == "__main__":
-    app.run()
+    app.run(host=localhost, port=arguments.port if arguments.port else 5000, debug=False)

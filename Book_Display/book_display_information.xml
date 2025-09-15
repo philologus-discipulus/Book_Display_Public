@@ -23,14 +23,14 @@
 <display>  <!--  One or more of these elements, provided that they each have <metadata> and at least one <book>  -->
     <metadata>
         <display_title>Urban Fantasy Series</display_title> <!--  may be left blank, but must be included  -->
-        <book_time>5</book_time>  <!-- Time is in seconds.  Eg. 300 seconds is 5 minutes -->
+        <book_time>15</book_time>  <!-- Time is in seconds.  Eg. 300 seconds is 5 minutes -->
     </metadata>
     <book>  <!-- One or more of these elements, as long as there is only one of each sub-element   -->
         <title>The Atrocity Archives</title> <!--  may be left blank, but must be included  -->
         <author>Charles Stross</author>  <!--  may be left blank, but must be included  -->
         <image_name>The_Atrocity_Archives.png</image_name>  <!--  may be left blank, but must be included  -->
         <review>  <!--  may be left blank, but must be included  -->
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            "Add review for 'The Atrocity Archives' here."
         </review>
         <review_author>Anonymous</review_author>  <!--  may be left blank, but must be included  -->
     </book>
@@ -38,7 +38,7 @@
         <title>Hounded</title>
         <author>Kevin Hearne</author>
         <image_name>Hounded.png</image_name>
-        <review>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</review>
+        <review>"Add review for 'Hounded' here."</review>
         <review_author>Anonymous</review_author>
     </book>
     <book>
@@ -53,7 +53,7 @@
 <display>
     <metadata>
         <display_title>Stock Display Title 2</display_title>
-		<book_time>5</book_time> <!-- Time is in seconds.  Eg. 300 seconds is 5 minutes -->
+		<book_time>10</book_time> <!-- Time is in seconds.  Eg. 300 seconds is 5 minutes -->
     </metadata>
     <book>
         <title>Book 1</title>
@@ -63,25 +63,11 @@
         <review_author>Stock Review Author 1</review_author>
     </book>
     <book>
-        <title>Book 2</title>
+        <title>Book 2 - No Picture</title>
         <author>Author 2</author>
         <image_name></image_name>
         <review>Stock Review Text 2</review>
         <review_author>Stock Review Author 2</review_author>
-    </book>
-    <book>
-        <title>Book 3</title>
-        <author>Author 3</author>
-        <image_name></image_name>
-        <review>Stock Review Text 3</review>
-        <review_author>Stock Review Author 3</review_author>
-    </book>
-    <book>
-        <title></title>
-        <author></author>
-        <image_name></image_name>
-        <review></review>
-        <review_author></review_author>
     </book>
 </display>
 </displays>

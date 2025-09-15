@@ -39,14 +39,14 @@ class Book:
 class Display:
     # title is the book's title
     
-    # book_time is the amount of time (in minutes) to spend on each book
+    # book_time is the amount of time (in seconds) to spend on each book
     
     # books are the set of books in a display
 
     # takes in the xml of a display and creates an object from it
     def __init__(self, d):
         self.title = d.findtext("metadata/display_title")
-        self.book_time = int(d.findtext("metadata/book_time")) if int(len(d.findtext("metadata/book_time"))) else 1
+        self.book_time = int(d.findtext("metadata/book_time")) if int(len(d.findtext("metadata/book_time"))) else 60
         self.books = [Book(b) for b in d.findall("book")]
 
 
