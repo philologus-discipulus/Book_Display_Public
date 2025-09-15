@@ -111,7 +111,7 @@ To customize the aesthetic of the display, consider editing the following files:
 
 /templates/frame.html
 
-Note that any content within curly brackets (ie. {}) should not be changed; this is embedded content from the server and is distinct from the surrounding css/html.
+Note that any content within curly brackets (ie. {}) should not be changed; this is embedded content from the server (see Flask for more details) and is distinct from the surrounding css/html.
 
 It is recommended that you not change any ids, nor any class defined in the html (eg. class = "book"), but rather change the styling of the class in the book_display.css.  The reason for this is that the javascript functions in /static/rotate.js rely on the class name to find certain elements.  The javascript also toggles the display of those elements from "block" to "none" and visa versa to control visibility.
 
