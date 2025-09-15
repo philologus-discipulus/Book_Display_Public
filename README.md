@@ -82,11 +82,17 @@ It is possible to run multiple versions of this project on the same computer on 
 ## Setup Steps:
 
 ### Code Setup 
+
 (1) Install the latest version of python on your system, and remember to set the path variable during setup (if you're using Windows).
+
 (2) Install pip, the python package management system.
+
 (3) Type "pip install Flask" (without quotes) at the terminal (or command prompt) in order to install the necessary libraries. 
+
 (4) Open a terminal (command prompt) window and navigate to the folder holding routes.py
+
 (5) Type "python3 routes.py" or "python routes.py" (without quotes - the python3/python should be the command necessary to run python from the command prompt) to run the site. If you want to specify a port, add the "-p &lt;portnumber&gt;" or "--port &lt;portnumber&gt;" (eg. "python3 routes.py --port 4000") to specify a port.  If you pick a port already in use, this program should fail; you should be able to try again with a different port.
+
 - (5.a) The prompt should then give you an address (some variant of a localhost port - eg. http://127.0.0.1:#### where #### is a four digit number denoting the port) on which the website is running. Open a browser and navigate to that address, and the website should load. (Tested in Firefox.) Please note that this is not actually intended for use as a website; rather, it is intended to be a local display that happens to be in a browser - nothing more.
 
 ### Display Customization
