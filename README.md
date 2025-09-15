@@ -5,7 +5,7 @@ A free, open-source program to help librarians (and people in general) set up di
 
 
 ## Licensing and Copyright Information
-Please note, this project is copyright by David Baron, and was created in 2017.  The dependencies of Bootstrap and JQuery (distributed with the project) are copyrighted to their respective authors. Flask (distributed separately) is copyrighted to its respective authors.
+Please note, this project is copyright by David Baron and was created in 2017.  The dependencies of Bootstrap and JQuery (distributed with the project) are copyrighted to their respective authors. Flask (distributed separately) is copyrighted to its respective authors.
 
 The advice contained in repository (along with the project itself) is licensed under the GPL 3.0, and the term "program" used in it refers to any and all files in this project, including this README.md file and the advice contained therein.
 
