@@ -106,7 +106,9 @@ It is recommended that, whenever changing a file, you make an appropriate backup
 To customize the aesthetic of the display, consider editing the following files:
 
 /static/book_display.css
+
 /templates/book_display_template.html
+
 /templates/frame.html
 
 Note that any content within curly brackets (ie. {}) should not be changed; this is embedded content from the server and is distinct from the surrounding css/html.
